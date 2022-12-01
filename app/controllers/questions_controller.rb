@@ -3,7 +3,7 @@ class QuestionsController < ApplicationController
 
   def show
     @answer = @question.answers.build
-    @answers = Answer.order created_at: :desc
+    @answers = Answer.where(question_id: @question).order created_at: :desc
   end
   
   def destroy
