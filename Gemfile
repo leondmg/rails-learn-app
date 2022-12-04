@@ -44,6 +44,11 @@ gem 'bootsnap', require: false
 gem 'draper'
 gem 'pagy'
 gem 'valid_email2'
+gem 'rubyzip'
+gem 'caxlsx'
+gem 'caxlsx_rails'
+gem 'rubyXL'
+gem 'activerecord-import'
 # Use Sass to process CSS
 # gem "sassc-rails"
 

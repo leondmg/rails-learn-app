@@ -7,8 +7,5 @@ AllCops:
   NewCops: enable
   TargetRubyVersion: 3.1.2
 
-Rails:
-  I18nLocaleTexts: disable
-
 Style/Documentation:
   Enabled: false
