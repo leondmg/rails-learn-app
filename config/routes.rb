@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 Rails.application.routes.draw do
-  scope "(:locale)", locale: /#{I18n.available_locales.join("|")}/ do
+  scope '(:locale)', locale: /#{I18n.available_locales.join("|")}/ do
     root 'pages#index'
 
     resource :session, only: %i[new create destroy]
@@ -15,5 +15,5 @@ Rails.application.routes.draw do
     namespace :admin do
       resources :users, only: %i[index create]
     end
-end
+  end
 end
