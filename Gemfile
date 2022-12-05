@@ -41,16 +41,15 @@ gem 'tzinfo-data', platforms: %i[mingw mswin x64_mingw jruby]
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', require: false
 
-gem 'draper'
-gem 'pagy'
-gem 'valid_email2'
-gem 'rubyzip'
+gem 'activerecord-import'
 gem 'caxlsx'
 gem 'caxlsx_rails'
+gem 'draper'
+gem 'pagy'
+gem 'rails-i18n', '~> 7.0.0'
 gem 'rubyXL'
-gem 'activerecord-import'
-# Use Sass to process CSS
-# gem "sassc-rails"
+gem 'rubyzip'
+gem 'valid_email2'
 
 # Use Active Storage variants [https://guides.rubyonrails.org/active_storage_overview.html#transforming-images]
 # gem "image_processing", "~> 1.2"
