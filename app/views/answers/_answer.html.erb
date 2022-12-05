@@ -1,5 +1,10 @@
 <%= tag.article class: 'mb-3 card', id: dom_id(answer) do %>
   <div class="card-body">
+    <section class="card-header">
+      <%= @question.user.gravatar %>
+      <%= @question.user.name_or_email %>
+    </section>
+
     <section class="card-text">
       <small><time datetime="<%= answer.formatted_created_at %>">
         <%= answer.formatted_created_at %>

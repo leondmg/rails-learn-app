@@ -3,6 +3,11 @@
 
 <h1 class="mb-4"><%= @question.title %></h1>
 
+<section class="card-header">
+  <%= @question.user.gravatar %>
+  <%= @question.user.name_or_email %>
+</section>
+
 <time datetime="<%= @question.formatted_created_at %>">
   <%= @question.formatted_created_at %>
 </time>
